@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./navstyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <!------------------------Nav---------------------->
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="../Főoldal/index.html">Szeby X Ákos</a></li>
+            <li class="item"><a href="../Eddigiek/index.html">Eddigiek</a></li>
+            <li class="item"><a href="../újítások/index.html">Újítások</a></li>
+            <li class="item"><a href="../szügség/index.html">Amire még szügség van</a></li>
+            </li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    <!--------------------Nav vége---------------------->
+    <div class="container">
+        <div class="myTodo">
+            <div class="inputvalue">
+                <input class="inputVal" type="text" placeholder="Adj hozzá egy elkészült újítást   (Max 54 karakter)" maxlength="54" value="">
+				<input onclick="datum" type="date" name="datum" class="datum" value="">
+                <button class="btn">+</button>
+            </div>
+            
+           
+            <div class="todoLists">
+            </div>
+            <button class="clearTask" onclick="clearTask()">Összes újítás törlése</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
