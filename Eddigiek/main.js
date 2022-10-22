@@ -5,7 +5,7 @@ const dateVal = document.getElementsByClassName('datum')[0];
 addTaskBtn.addEventListener('click', function (){
  
 if(inputVal.value.trim()!=0){
-	  let localItems = JSON.parse( localStorage.getItem('localItem'))
+	  let localItems = JSON.parse( sessionStorage.getItem('localItem'))
    if(localItems === null){
 		taskList = []
 
@@ -14,14 +14,14 @@ if(inputVal.value.trim()!=0){
 	   taskList = localItems;
    }
    taskList.push(inputVal.value + " " + dateVal.value)
-   localStorage.setItem('localItem', JSON.stringify(taskList)); 
+   sessionStorage.setItem('localItem', JSON.stringify(taskList)); 
 }
 
    showItem()
 })
 
 function showItem(){
-   let localItems = JSON.parse( localStorage.getItem('localItem'))
+   let localItems = JSON.parse( sessionStorage.getItem('localItem'))
    if(localItems === null){
 		taskList = []
 
@@ -47,15 +47,15 @@ itemShow.innerHTML = html;
 showItem()
 
 function deleteItem(index){
-   let localItems = JSON.parse( localStorage.getItem('localItem'))
+   let localItems = JSON.parse( sessionStorage.getItem('localItem'))
    taskList.splice(index, 1)
-   localStorage.setItem('localItem', JSON.stringify(taskList));
+   sessionStorage.setItem('localItem', JSON.stringify(taskList));
    showItem()
 }
 
 function clearTask(){
    
-localStorage.clear()
+sessionStorage.clear()
 showItem()
 }
 
@@ -64,5 +64,5 @@ function Date() {
 	d.setDate(d.getDate() + 50);
 	document.getElementById("demo").innerHTML = d;
 	taskList.push(d.value)
-	localStorage.setItem('localItem', JSON.stringify(taskList)); 
+	sessionStorage.setItem('localItem', JSON.stringify(taskList)); 
 }
