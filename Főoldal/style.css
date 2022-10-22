@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Silkscreen&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    z-index: -1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: block;
+    width: 1144px;
+    height: 679px;
+    background: linear-gradient(106.68deg, rgba(255, 255, 255, 0.4) 0.12%, rgba(255, 255, 255, 0.15) 102.65%);
+    box-shadow: 7px 10px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.kep {
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.card h1 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Footer */
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 564px;
+    background: #1A1A1A;
+}
+
+.creators h1 {
+    font-size: 38px;
+    text-align: right;
+    color: #FFFFFF;
+    padding-top: 50px;
+    padding-right: 30px;
+}
+
+.media img {
+    width: 1.5%;
+}
+h2 {
+    display: flex;
+    font-size: 40px;
+    padding-left: 60px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+      font-size: 25px;
+    }
+}   
