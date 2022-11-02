@@ -1,71 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Silkscreen&display=swap');
 
+
 html {
+    font-family: Poppins;
     scroll-behavior: smooth;
+    background: #001920;
   }
 
 * {
-    box-sizing: border-box;
-}
-
-.container {
-    z-index: -1;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card {
-    display: block;
-    width: 1144px;
-    height: 679px;
-    background: linear-gradient(106.68deg, rgba(255, 255, 255, 0.4) 0.12%, rgba(255, 255, 255, 0.15) 102.65%);
-    box-shadow: 7px 10px 16px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-}
-
-.kep {
-    padding-top: 40px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-
-.card h1 {
-	position: sticky;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-@media (max-width: 767px) {
-	.card {
-		height: 300px;
-	}
-}
-
-.leiras {
-	padding-left: 60px;
-	padding-right: 60px;
-	font-size: 40px;
-	text-align: center;
-	color: #FFFFFF;
-	padding-bottom: 100px;
-}
-
-/* Footer */
-
-body{
-	line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
-}
-*{
-	margin:0;
+    margin:0;
 	padding:0;
 	box-sizing: border-box;
 }
-.container{
+
+
+.header {
+    padding: 20px;
+    font-size: 64px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+
+.container {
+    padding-left: 200px;
+    padding-bottom: 200px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+}
+
+.img-col {
+	border-radius: 15px;
+	background: linear-gradient(106.68deg, rgba(255, 255, 255, 0.4) 0.12%, rgba(255, 255, 255, 0.15) 102.65%);
+    box-shadow: 7px 10px 16px rgba(0, 0, 0, 0.25);
+}
+
+.text-col {
+	
+    padding-left: 200px;
+}
+
+img {
+    width: 70%;
+    flex-basis: auto;
+}
+
+
+@media(max-width: 767px){
+    .container{
+		padding: 10px;
+        justify-content: center;
+        align-items: center;
+        display: block;
+  }
+  .text-col {
+	padding: 0;
+  }
+  }
+
+
+/* Footer */
+
+.container1{
+    padding-left: 160px;
 	max-width: 1170px;
 	margin:auto;
 }
@@ -145,13 +146,9 @@ ul{
 }
 @media(max-width: 574px){
   .footer-col{
-    width: 100%;
+   width: 100%;
 }
 }
-
-
-
-
 
 
 .leiras {
